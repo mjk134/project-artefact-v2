@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "project-artefact-v2",
+  "version": "${version}",
+  "name": "Project Artefact V2",
+  "description": "Yes.",
+  "authors": [
+    "mjk134",
+    "mounderfod"
+  ],
+  "contact": {
+    "website": "https://yourmom.zip/",
+    "repo": "https://github.com/mjk134/project-artefact-v2"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/project-artefact-v2/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.projectartefact.projectartefactv2.client.ProjectArtefactV2Client"
+    ],
+    "main": [
+      "net.projectartefact.projectartefactv2.ProjectArtefactV2"
+    ]
+  },
+  "mixins": [
+    "project-artefact-v2.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
